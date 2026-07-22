@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tiia Tikkala</title>
-<meta name="description" content="Personal site of Tiia Tikkala; M.Sc. thesis and selected projects.">
+<title>Tiia Tikkala — Robotics &amp; Machine Learning</title>
+<meta name="description" content="Tiia Tikkala — robot learning, embodied AI, and autonomous systems. M.Sc. thesis, selected projects, and contact details.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -197,7 +197,7 @@
 <body>
 
 <nav class="wrap">
-  <span class="nav-name">Your Name</span>
+  <span class="nav-name">Tiia Tikkala</span>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#thesis">Thesis</a>
@@ -207,9 +207,9 @@
 </nav>
 
 <div class="hero">
-  <div class="eyebrow mono">ROBOTICS &amp; MACHINE LEARNING</div>
-  <h1>Hi, I'm Your Name.</h1>
-  <p>I'm a robotics and machine learning researcher interested in how a robot's physical form and its behaviour can be designed together, rather than one after the other.</p>
+  <div class="eyebrow mono">ROBOT LEARNING &amp; EMBODIED AI</div>
+  <h1>Hi, I'm Tiia Tikkala.</h1>
+  <p>I'm a recent M.Sc. graduate working at the intersection of real-world hardware, simulation, and machine learning — currently looking for a Research Engineer role in robot learning and real-world deployment.</p>
 
   <div class="btn-row">
     <a class="btn primary" href="#about">About me</a>
@@ -220,8 +220,9 @@
 <section id="about">
   <div class="section-label mono">ABOUT</div>
   <div class="about-body">
-    <p>I'm a robotics and machine learning researcher interested in how physical form and control can be optimised together, rather than treating a robot's body as fixed. My work sits at the intersection of deep reinforcement learning, evolutionary optimisation, and multi-agent systems.</p>
-    <p>I completed my M.Sc. in [Your Program] at [Your University] in [Year]. I'm currently [open to opportunities in robotics/ML — edit this line].</p>
+    <p>I'm a recent M.Sc. graduate in Computational Science and Engineering with a strong interest in robot learning, embodied AI, and autonomous systems. I enjoy working at the intersection of real-world hardware, simulation, and machine learning, and I'm at my best working in a driven team.</p>
+    <p>My M.Sc. thesis was on multi-agent reinforcement learning for robot co-design, and I've implemented, trained, and deployed learned policies for real-world drone flight. I enjoy translating cutting-edge research into practical systems, and I'm seeking a Research Engineer role at the intersection of robot learning and real-world deployment.</p>
+    <p>Before my M.Sc., I completed a B.Sc. in Aerospace Engineering at TU Delft, where I spent several years building and flying student rockets — experience that still shapes how I approach hardware-facing research today.</p>
   </div>
 </section>
 
@@ -229,13 +230,21 @@
   <div class="section-label mono">THESIS</div>
   <div class="thesis-card">
     <h2>Optimising Simulated Robot Soccer Through Multi-Agent Co-Design</h2>
-    <div class="thesis-sub mono">M.Sc. THESIS &middot; [YEAR]</div>
+    <div class="thesis-sub mono">M.SC. THESIS &middot; TECHNICAL UNIVERSITY OF MUNICH &middot; 2026</div>
 
     <p>Robot co-design searches for a robot's optimal shape and controller at the same time. This thesis builds a co-design framework for teams of robots playing simulated soccer — work intended as a stepping stone toward faster, more robust design of robot teams for tasks like search and rescue.</p>
 
     <p>The framework has three parts: a controller trained with deep multi-agent reinforcement learning (MATD3), an optimiser (Particle Swarm Optimisation) that searches for high-performing designs, and a surrogate model that estimates a candidate design's performance without a full costly evaluation. Two surrogates were compared: one built on a learned Q-function, the other on Gaussian process regression.</p>
 
     <div class="meta-row">
+      <div class="meta-item">
+        <span class="k">SUPERVISOR</span>
+        <span class="v mono">Asst. Prof. Kevin Luck</span>
+      </div>
+      <div class="meta-item">
+        <span class="k">EXAMINER</span>
+        <span class="v mono">Prof. Angela Schoellig</span>
+      </div>
       <div class="meta-item">
         <span class="k">CONTROLLER</span>
         <span class="v mono">MATD3</span>
@@ -256,7 +265,7 @@
 
     <div class="btn-row">
       <a class="btn primary" href="thesis.pdf">Download PDF</a>
-      <a class="btn" href="https://github.com/yourusername/thesis-repo">Code repository</a>
+      <a class="btn" href="https://github.com/ttikkala/ma-co-design-thesis">Code repository</a>
     </div>
 
     <div class="findings-label mono">SELECTED FINDINGS</div>
@@ -281,19 +290,24 @@
   <div class="section-label mono">SELECTED PROJECTS</div>
   <div class="projects">
     <div class="project">
-      <h3>Project Name</h3>
-      <p>A one- or two-sentence description of what the project is and what you built or contributed.</p>
+      <h3>Sim-to-Real Drone Flight with Deep RL</h3>
+      <p>Implemented the Soft Actor-Critic algorithm and built a full robot-learning pipeline — from simulation to policy training on real flight data to deployment on a physical Crazyflie 2.1 drone — using OptiTrack motion capture and onboard IMU data. Independently managed the project during a 12-week research internship at Aalto University's Intelligent Robotics group.</p>
       <div class="links-row">
-        <a href="https://github.com/yourusername/project-repo">Repository</a>
-        <a href="#">Live demo</a>
+        <a href="https://github.com/ttikkala/drone-RL-internship">Repository</a>
       </div>
     </div>
     <div class="project">
-      <h3>Project Name</h3>
-      <p>A one- or two-sentence description of what the project is and what you built or contributed.</p>
+      <h3>Co-Design and Control of a Biomimetic Snake Robot</h3>
+      <p>Co-authored a paper on using reinforcement learning to jointly design a biomimetic snake robot and its contact surfaces, presented at the Eighteenth European Workshop on Reinforcement Learning.</p>
       <div class="links-row">
-        <a href="https://github.com/yourusername/project-repo">Repository</a>
-        <a href="#">Live demo</a>
+        <a href="https://openreview.net/forum?id=fUdHUU2ZCV">Read the paper</a>
+      </div>
+    </div>
+    <div class="project">
+      <h3>Autonomous Rocket Glider</h3>
+      <p>Founded and led a team building an autonomous rocket glider as part of Delft Aerospace Rocket Engineering — building hardware prototypes and implementing a PID flight controller in C++.</p>
+      <div class="links-row">
+        <a href="https://github.com/ttikkala/glider-control">Repository</a>
       </div>
     </div>
   </div>
@@ -302,9 +316,9 @@
 <section id="contact">
   <div class="section-label mono">CONTACT</div>
   <div class="links-row">
-    <a href="https://github.com/yourusername">GitHub</a>
-    <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-    <a href="mailto:you@example.com">Email</a>
+    <a href="https://github.com/ttikkala">GitHub</a>
+    <a href="https://www.linkedin.com/in/tiia-tikkala/">LinkedIn</a>
+    <a href="mailto:tiia.tikkala@gmail.com">Email</a>
   </div>
 </section>
 
