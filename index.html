@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tiia Tikkala — Robotics &amp; Machine Learning</title>
-<meta name="description" content="Tiia Tikkala — robot learning, embodied AI, and autonomous systems. M.Sc. thesis, selected projects, and contact details.">
+<title>Tiia Tikkala</title>
+<meta name="description" content="Tiia Tikkala; M.Sc. thesis, selected projects, and contact details.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -208,8 +208,8 @@
 
 <div class="hero">
   <div class="eyebrow mono">ROBOT LEARNING &amp; EMBODIED AI</div>
-  <h1>Hi, I'm Tiia Tikkala.</h1>
-  <p>I'm a recent M.Sc. graduate working at the intersection of real-world hardware, simulation, and machine learning — currently looking for a Research Engineer role in robot learning and real-world deployment.</p>
+  <h1>Tiia Tikkala.</h1>
+  <p>I'm a recent MSc graduate working at the intersection of real-world hardware, simulation, and machine learning. I'm currently looking for a Research Engineer role in robot learning and real-world deployment.</p>
 
   <div class="btn-row">
     <a class="btn primary" href="#about">About me</a>
@@ -220,9 +220,9 @@
 <section id="about">
   <div class="section-label mono">ABOUT</div>
   <div class="about-body">
-    <p>I'm a recent M.Sc. graduate in Computational Science and Engineering with a strong interest in robot learning, embodied AI, and autonomous systems. I enjoy working at the intersection of real-world hardware, simulation, and machine learning, and I'm at my best working in a driven team.</p>
-    <p>My M.Sc. thesis was on multi-agent reinforcement learning for robot co-design, and I've implemented, trained, and deployed learned policies for real-world drone flight. I enjoy translating cutting-edge research into practical systems, and I'm seeking a Research Engineer role at the intersection of robot learning and real-world deployment.</p>
-    <p>Before my M.Sc., I completed a B.Sc. in Aerospace Engineering at TU Delft, where I spent several years building and flying student rockets — experience that still shapes how I approach hardware-facing research today.</p>
+    <p>I'm a recent MSc graduate in Computational Science and Engineering (TU Munich) with a strong interest in robot learning, embodied AI, and autonomous systems. I enjoy working at the intersection of real-world hardware, simulation, and machine learning, and I'm at my best working in a driven team.</p>
+    <p>My MSc thesis was on multi-agent reinforcement learning for robot co-design, and in a previous project I've implemented, trained, and deployed learned policies for real-world drone flight. I enjoy translating cutting-edge research into practical systems, and I'm seeking a Research Engineer role at the intersection of robot learning and real-world deployment.</p>
+    <p>Before my MSc, I completed a BSc in Aerospace Engineering at TU Delft, where I spent several years building and flying student rockets.</p>
   </div>
 </section>
 
@@ -230,20 +230,20 @@
   <div class="section-label mono">THESIS</div>
   <div class="thesis-card">
     <h2>Optimising Simulated Robot Soccer Through Multi-Agent Co-Design</h2>
-    <div class="thesis-sub mono">M.SC. THESIS &middot; TECHNICAL UNIVERSITY OF MUNICH &middot; 2026</div>
+    <div class="thesis-sub mono">MSc THESIS &middot; TECHNICAL UNIVERSITY OF MUNICH &middot; 2026</div>
 
-    <p>Robot co-design searches for a robot's optimal shape and controller at the same time. This thesis builds a co-design framework for teams of robots playing simulated soccer — work intended as a stepping stone toward faster, more robust design of robot teams for tasks like search and rescue.</p>
+    <p>Robot co-design searches for a robot's optimal shape and controller at the same time. This thesis builds a co-design framework for teams of robots playing simulated soccer. This work is intended as a stepping stone toward faster, more robust design of robot teams for tasks like search and rescue.</p>
 
-    <p>The framework has three parts: a controller trained with deep multi-agent reinforcement learning (MATD3), an optimiser (Particle Swarm Optimisation) that searches for high-performing designs, and a surrogate model that estimates a candidate design's performance without a full costly evaluation. Two surrogates were compared: one built on a learned Q-function, the other on Gaussian process regression.</p>
+    <p>The framework has three parts: a controller trained with deep multi-agent reinforcement learning (MATD3), an optimiser (Particle Swarm Optimisation) that searches for new designs, and a surrogate model that estimates a candidate design's performance. Two surrogates were compared: one built on a learned Q-function, the other on Gaussian process regression (simple Bayesian optimisation).</p>
 
     <div class="meta-row">
       <div class="meta-item">
         <span class="k">SUPERVISOR</span>
-        <span class="v mono">Asst. Prof. Kevin Luck</span>
+        <span class="v mono">Asst. Prof. Kevin Luck (VU Amsterdam)</span>
       </div>
       <div class="meta-item">
         <span class="k">EXAMINER</span>
-        <span class="v mono">Prof. Angela Schoellig</span>
+        <span class="v mono">Prof. Angela Schoellig (TUM)</span>
       </div>
       <div class="meta-item">
         <span class="k">CONTROLLER</span>
@@ -276,11 +276,11 @@
       </div>
       <div class="finding">
         <div class="tag mono">Q-SURROGATE</div>
-        <div class="body"><p>Co-design converged immediately onto the design with the longest legs possible. It didn't underperform a random baseline, but the instant collapse points to a flaw in the approach rather than a genuine optimum.</p></div>
+        <div class="body"><p>Co-design converged immediately onto the design with the longest legs possible. It didn't underperform a random baseline, but the instant convergence points to a flaw in the approach rather than a genuine optimum.</p></div>
       </div>
       <div class="finding">
         <div class="tag mono">GP-SURROGATE</div>
-        <div class="body"><p>Explored the design space diversely and matched the random baseline on average, but reached a <span class="stat">17% higher</span> best-so-far return than the baseline.</p></div>
+        <div class="body"><p>Explored the design space diversely and matched the random baseline on average, reached a <span class="stat">17% higher</span> best-so-far return than the baseline.</p></div>
       </div>
     </div>
   </div>
@@ -290,8 +290,8 @@
   <div class="section-label mono">SELECTED PROJECTS</div>
   <div class="projects">
     <div class="project">
-      <h3>Sim-to-Real Drone Flight with Deep RL</h3>
-      <p>Implemented the Soft Actor-Critic algorithm and built a full robot-learning pipeline — from simulation to policy training on real flight data to deployment on a physical Crazyflie 2.1 drone — using OptiTrack motion capture and onboard IMU data. Independently managed the project during a 12-week research internship at Aalto University's Intelligent Robotics group.</p>
+      <h3>Drone Flight with Deep RL</h3>
+      <p>Implemented the Soft Actor-Critic algorithm and built a full robot-learning pipeline: from simulation to policy training on real flight data to deployment on a physical Crazyflie 2.1 drone. Used OptiTrack motion capture and onboard IMU data. Independently managed the project during a 12-week research internship at Aalto University's Intelligent Robotics group.</p>
       <div class="links-row">
         <a href="https://github.com/ttikkala/drone-RL-internship">Repository</a>
       </div>
@@ -305,7 +305,7 @@
     </div>
     <div class="project">
       <h3>Autonomous Rocket Glider</h3>
-      <p>Founded and led a team building an autonomous rocket glider as part of Delft Aerospace Rocket Engineering — building hardware prototypes and implementing a PID flight controller in C++.</p>
+      <p>Founded and led a team building an autonomous rocket glider as part of Delft Aerospace Rocket Engineering. Built hardware prototypes and implemented a PID flight controller in C++.</p>
       <div class="links-row">
         <a href="https://github.com/ttikkala/glider-control">Repository</a>
       </div>
