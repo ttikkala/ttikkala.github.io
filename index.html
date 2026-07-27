@@ -189,6 +189,24 @@
   .project p{ max-width: 60ch; margin: 0; }
   .project .links-row{ margin-top: 14px; }
 
+  .project--side{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 24px;
+    align-items: start;
+  }
+  .project--side .project-text{ grid-column: 1; }
+  .project--side video{
+    grid-column: 2;
+    grid-row: 1 / 3;
+    max-width: 200px;
+    margin: 4px 0 0;
+  }
+  @media (max-width: 560px){
+    .project--side{ grid-template-columns: 1fr; }
+    .project--side video{ grid-column: 1; max-width: 240px; margin: 14px 0; }
+  }
+
   /* ---------- FOOTER ---------- */
   footer{ max-width: 900px; margin: 0 auto; padding: 40px 28px 60px; }
   footer p{ font-size: 13px; color: #7A8079; margin: 0; }
@@ -279,16 +297,18 @@
       <div class="links-row">
       </div>
     </div>
-    <div class="project">
-      <h3>Drone flight with deep RL (2023)</h3>
-      <p>Implemented the Soft Actor-Critic algorithm and built a full robot-learning pipeline: from simulation to policy training on real flight data to deployment on a physical Crazyflie 2.1 drone. Used OptiTrack motion capture and onboard IMU data. Independently managed the project during a 12-week research internship at Aalto University's Intelligent Robotics group.</p>
-      <video controls preload="metadata" muted>
-        <source src="images/video5771893685943803670(1).mp4" type="video/mp4">
-        Your browser doesn't support embedded video. <a href="videos/drone-flight.mp4">Download the clip</a> instead.
-      </video>
-      <div class="links-row">
-        <a href="https://github.com/ttikkala/drone-RL-internship">Repository</a>
-        <a href="https://web.archive.org/web/20250215110708/https:/irobotics.aalto.fi/summer-internships-at-the-intelligent-robotics-group/">Blog post on the Intelligent Robotics group site</a>
+    <div class="project project--side">
+      <div class="project-text">
+        <h3>Drone flight with deep RL (2023)</h3>
+        <p>Implemented the Soft Actor-Critic algorithm and built a full robot-learning pipeline: from simulation to policy training on real flight data to deployment on a physical Crazyflie 2.1 drone. Used OptiTrack motion capture and onboard IMU data. Independently managed the project during a 12-week research internship at Aalto University's Intelligent Robotics group.</p>
+        <div class="links-row">
+          <a href="https://github.com/ttikkala/drone-RL-internship">Repository</a>
+          <a href="https://web.archive.org/web/20250215110708/https:/irobotics.aalto.fi/summer-internships-at-the-intelligent-robotics-group/">Blog post on the Intelligent Robotics group site</a>
+        </div>
+        <video controls preload="metadata" muted>
+          <source src="images/video5771893685943803670(1).mp4" type="video/mp4">
+          Your browser doesn't support embedded video. <a href="videos/drone-flight.mp4">Download the clip</a> instead.
+        </video>
       </div>
     </div>
     <div class="project">
